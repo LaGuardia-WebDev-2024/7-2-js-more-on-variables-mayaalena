@@ -1,11 +1,12 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 void setup() {
     size(400, 400); 
+    var eyeSize= 40;
 }
 
 //🎯Varaible Declarations Go Here
 var x = 200;
-var y = 100;
+var y = 200;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
@@ -24,7 +25,17 @@ void draw(){
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
   
+// mouth
+fill (200,0,0);
+ellipse(x,y+15,80,20)
 
+//eyeballs
+fill(0,0,0)
+ellipse(x-50,y-45,20,20)
+ellipse(x+50,y-45,20,20)
+
+x= mouseX
+y=mouseY
 }
 
 
